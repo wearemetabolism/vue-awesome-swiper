@@ -122,7 +122,7 @@
     beforeDestroy() {
       this.$nextTick(function() {
         if (this.swiper) {
-          this.swiper.destroy && this.swiper.destroy()
+          this.swiper.destroy && this.swiper.destroy(true, false)
           delete this.swiper
         }
       })
